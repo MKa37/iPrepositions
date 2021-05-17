@@ -72,10 +72,12 @@ void print_rules() {
     
     // ввод номера и вывод правила
     int userInput = 0;
-    while ((userInput < 1 || userInput >= rulesCount) && userInput != -1) {
+    while (true) {
       cin >> userInput;
       if (userInput < 1 || userInput >= rulesCount){
         cout << "Нет такого номера. Введи другой" << endl;
+      } else {
+          break;
       }
     }
     cout << endl;
@@ -179,6 +181,7 @@ void print_menu() {
                     cin >> numOfQuestion;
                     if (numOfQuestion > 0 && numOfQuestion <= 25) {
                         gameMode1(numOfQuestion);
+                        break;
                     } else {
                         cout << "Количество вопросов должно быть больше 0 и не больше, чем 25" << "\n";
                         continue;
