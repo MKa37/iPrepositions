@@ -369,6 +369,8 @@ void print_achiv() {
 int main() {
     setlocale(LC_ALL,"Russian");
     
+    for (int i = 0; i < 1e3; i++) cout << endl;
+    
 
     if (!(questions.is_open())) {
         cout << "Не могу найти файл с вопросами(";
