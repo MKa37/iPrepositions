@@ -14,7 +14,7 @@ fstream rules("rules.txt");
 fstream achiv("achiv.txt");
 
 int score = 0;
-int questionCount = 23; // count of all questions in file (size-1)
+int questionCount = 30; // count of all questions in file (size-1)
 int rulesCount = 0;
 int record = 0; // рекорд
 int numOfQuestion; // количество вопросов
@@ -135,7 +135,7 @@ void print_hello() {
 
 
     // заполняем массив правил
-    rulesCount = 5;
+    rulesCount = 7;
     // getline(rules, s);
     for (int i = 0; i < rulesCount; i++){
         getline(rules, s);
