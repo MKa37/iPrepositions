@@ -177,10 +177,10 @@ void print_menu() {
                 while (true) {
                     cout << endl << "Сколько ты хочешь вопросов?" << "\n";
                     cin >> numOfQuestion;
-                    if (numOfQuestion > 0 && numOfQuestion <= questionCount) {
+                    if (numOfQuestion > 0 && numOfQuestion <= 25) {
                         gameMode1(numOfQuestion);
                     } else {
-                        cout << "Количество вопросов должно быть больше 0 и не больше, чем 20" << "\n";
+                        cout << "Количество вопросов должно быть больше 0 и не больше, чем 25" << "\n";
                         continue;
                     }
                 }
