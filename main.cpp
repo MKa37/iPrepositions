@@ -75,7 +75,7 @@ void print_rules() {
     while ((userInput < 1 || userInput >= rulesCount) && userInput != -1) {
       cin >> userInput;
       if (userInput < 1 || userInput >= rulesCount){
-        cout << "Нет такого вопроса. Введи другой" << endl;
+        cout << "Нет такого номера. Введи другой" << endl;
       }
     }
     cout << endl;
