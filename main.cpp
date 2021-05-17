@@ -180,7 +180,7 @@ void print_menu() {
                     if (numOfQuestion > 0 && numOfQuestion <= questionCount) {
                         gameMode1(numOfQuestion);
                     } else {
-                        cout << "Количество вопросов должно быть больше 0 и не больше, чем " <<           questionCount << "\n";
+                        cout << "Количество вопросов должно быть больше 0 и не больше, чем 20" << "\n";
                         continue;
                     }
                 }
