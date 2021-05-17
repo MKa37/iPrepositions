@@ -72,9 +72,9 @@ void print_rules() {
     
     // ввод номера и вывод правила
     int userInput = 0;
-    while ((userInput < 1 || userInput >= rulesCount) && userInput != -1) {
+    while ((userInput < 1 || userInput >= rulesCount) && userInput != -1 && !isalpha(userInput)) {
       cin >> userInput;
-      if (userInput < 1 || userInput >= rulesCount){
+      if (userInput < 1 || userInput >= rulesCount || isalpha(userInput)){
         cout << "Нет такого номера. Введи другой" << endl;
       }
     }
